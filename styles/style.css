@@ -1,0 +1,78 @@
+* {
+  border: black 1px solid;
+  /* box-sizing: border-box; */
+}
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+   padding-left: 10vw;
+   padding-right: 10vw;
+   width: 80vw;
+   /* height: 80vh; */
+
+}
+
+ul {
+  list-style-type: none;
+  padding: none;
+
+}
+
+.entire-site-container {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "top-nav top-nav"
+    "picture picture"
+    "main brief"
+    "main bio"
+    "main contact"
+    "footer footer"
+}
+
+.entire-site-container > * {
+    align-content: center;
+}
+
+.nav {
+  grid-area: top-nav;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  color: red;
+}
+
+.nav li {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.picture-main  {
+  grid-area: picture;
+  background: url("http://via.placeholder.com/1330x150z") no-repeat center;
+}
+
+.content-main  {
+  grid-area: main;
+
+}
+
+.brief-bio  {
+  grid-area: brief;
+}
+
+.longer-bio  {
+  grid-area: bio;
+}
+
+.contact-info  {
+  grid-area: contact;
+}
+
+.footer-area  {
+  grid-area: footer;
+}
