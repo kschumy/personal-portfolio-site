@@ -46,11 +46,6 @@ a:link, a:visited {
   color: #61AFEF;
 }
 
-/* a:link, .side a:visited, .footer-area a:link, .footer-area a:visited {
-  text-decoration: none;
-  color: #61AFEF;
-} */
-
 a:hover {
   color: #98C379;
 }
@@ -76,12 +71,6 @@ a:hover {
 /* nav ************************************************************************/
 .nav {
   grid-area: top-nav;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.nav, .nav > ul {
-  background-color: #61AFEF;
 }
 
 .nav ul {
@@ -90,6 +79,8 @@ a:hover {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .nav li {
@@ -146,17 +137,13 @@ a:hover {
 }
 
 .picture-main li:last-child {
-  border-top-right-radius: 15px;
   padding-top: 1.55em;
   margin-bottom: -1em;
   padding-right: 0.3em;
   font-size: 0.8em;
 }
 
-.picture-main li:first-child {
-  border-top-left-radius: 15px;
-}
-
+/* title page *****************************************************************/
 .page-title {
   grid-area: page-title;
 }
@@ -256,11 +243,7 @@ a:hover {
   border-top-style: solid;
   border-width: thin;
   border-color: #61AFEF;
-
   color: #ABB2BF;
-  padding: 0em;
-  margin: 0em;
-  padding-bottom: 0em;
 }
 
 /**
